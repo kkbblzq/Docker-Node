@@ -68,3 +68,6 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
 
 # cnpm
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+#curl
+RUN apk add curl --no-cache
