@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:dind
 
 # nodejs setup from https://github.com/nodejs/docker-node/ 
 ENV NODE_VERSION 9.7.1
