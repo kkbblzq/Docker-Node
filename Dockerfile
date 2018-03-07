@@ -48,7 +48,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz
 
 ENV YARN_VERSION 1.5.1
 
-RUN rm -rf /root/.gnupg/pubring.kbx~ \
+RUN ls /root/.gnupg/ && rm -rf /root/.gnupg \
     && apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
     && for key in \
     6A010C5166006599AA17F08146C2130DFD2497F5 \
